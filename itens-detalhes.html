@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do item</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="detalhe.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="#">Amparo Animal</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Doação de Itens de Pet</a></li>
+                    <li><a href="#">Postagens de adotantes</a></li>
+                    <li><a href="#">Administração de ONGs</a></li>
+                </ul>
+            </nav>
+            <div class="user-menu">
+                <a href="#">
+                    <svg class="icon-globe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    ong.xyz
+                    <span>&#9662;</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        
+        <div id="detalhe-container" class="detalhe-container">
+            
+            <div class="detalhe">
+
+                <div class="detailhe-img">
+                    <img id="item-foto" src="" alt="Foto do item">
+                </div>
+
+                <div class="informacoes-item">
+                    <h1 id="nome-item">Nome do item</h1>
+                    
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <label>Tempo de uso</label>
+                            <p id="tempo">Tempo</p>
+                        </div>
+                        <div class="info-item">
+                            <label>Animal</label>
+                            <p id="animal">Animal</p>
+                        </div>
+                        <div class="info-item">
+                            <label>Porte</label>
+                            <p id="porte">Porte</p>
+                        </div>
+                    </div>
+
+                    <div class="descricao">
+                        <label>Descrição:</label>
+                        <p id="item-descricao">Descrição</p>
+                    </div>
+
+                    <a href="#" class="solicitar-item">
+                        Solicitar Item
+                    </a>
+                </div>
+            </div>
+
+        </div> <a href="index.html" class="btn-navigate" style="margin-top: 30px;">
+            Voltar para a Lista
+        </a>
+    </div>
+    <script src="detalhes.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Itens</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="itens.css">
+    <link rel="stylesheet" href="teste.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="#">Amparo Animal</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Doação de Itens de Pet</a></li>
+                    <li><a href="#">Postagens de adotantes</a></li>
+                    <li><a href="#">Administração de ONGs</a></li>
+                </ul>
+            </nav>
+            <div class="user-menu">
+                <a href="#">
+                    <svg class="icon-globe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    ong.xyz
+                    <span>&#9662;</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="container-principal">
+        <aside class="filtro-container">
+        <h2>Filtrar Itens</h2>
+        <form id="filtro-form">
+            <label for="filtro-nome">Nome:</label>
+            <input type="text" id="filtro-nome" placeholder="Buscar por nome...">
+
+            <label for="filtro-tipoAnimal">Tipo de Animal:</label>
+            <select id="filtro-tipoAnimal">
+                <option value="">Todos</option>
+                <option value="Cachorro">Cachorro</option>
+                <option value="Gato">Gato</option>
+                <option value="Ave">Ave</option>
+                <option value="Outro">Outro</option>
+            </select>
+
+            <label for="filtro-porte">Porte:</label>
+            <select id="filtro-porte">
+                <option value="">Todos</option>
+                <option value="Pequeno">Pequeno</option>
+                <option value="Médio">Médio</option>
+                <option value="Grande">Grande</option>
+            </select>
+
+            <label for="filtro-tempoUso">Tempo de Uso:</label>
+            <select id="filtro-tempoUso">
+                <option value="">Todos</option>
+                <option value="Novo">Novo</option>
+                <option value="Pouco uso">Pouco uso</option>
+                <option value="6 meses">6 meses</option>
+                <option value="1 ano">1 ano</option>
+            </select>
+
+            <button type="submit" class="btn-filtrar">Filtrar</button>
+            <button type="button" id="btn-limpar" class="btn-limpar">Limpar Filtros</button>
+        </form>
+    </aside>
+    <div class="container-itens">
+        <a href="cadastro-item.html" class="btn-navigate">Adicionar Item</a>
+        <h1>Itens para Doação</h1>
+        <div id="itens-container" class="itens-grid"></div>
+    </div>
+
+    <aside class="propaganda">
+        <h2>Publicidade</h2>
+        <img src="https://via.placeholder.com/300x600?text=Espaço+para+Propaganda" alt="Anúncio">
+        <p>Anuncie aqui sua marca ou produto!</p>
+    </aside>
+    </div>
+
+    <script src="itens.js" defer></script>
+</body>
+</html>

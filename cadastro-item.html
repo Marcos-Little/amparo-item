@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar item</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="#">Amparo Animal</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Doação de Itens de Pet</a></li>
+                    <li><a href="#">Postagens de adotantes</a></li>
+                    <li><a href="#">Administração de ONGs</a></li>
+                </ul>
+            </nav>
+            <div class="user-menu">
+                <a href="#">
+                    <svg class="icon-globe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                        </path>
+                    </svg>
+                    ong.xyz
+                    <span>&#9662;</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Itens</h1>
+
+        <div class="card">
+            <h2 id="titulo-form">Cadastro Item</h2>
+            <form id="formulario-item">
+                <input type="hidden" id="item-id">
+                <div class="form-group">
+                    <label for="nome">Nome do Item:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Ex: Cama de cachorro" required>
+                </div>
+                <div class="form-group">
+                    <label for="especie">Animal:</label>
+                    <select id="tipoAnimal" name="especie" required>
+                        <option value="">Selecione...</option>
+                        <option value="Cachorro">Cachorro</option>
+                        <option value="Gato">Gato</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="porte">Porte:</label>
+                    <select id="porte" name="porte" required>
+                        <option value="">Selecione...</option>
+                        <option value="Pequeno">Pequeno</option>
+                        <option value="Medio">Médio</option>
+                        <option value="Grande">Grande</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="nome">Tempo de Uso:</label>
+                    <input type="text" id="tempoUso" name="nome" placeholder="6 meses" required>
+                </div>
+                <div class="form-group">
+                    <label for="foto">Foto do item</label>
+                    <input type="file" id="foto" name="foto" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <label for="descricao">Descrição:</label>
+                    <textarea id="descricao" name="descricao"
+                        placeholder="Ex: cama de cachorro com 6 meses de uso, em ótimo estado para cães de médio porte" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary" id="form-btn">
+                    Adicionar Item
+                </button>
+            </form>
+        </div>
+        <div class="card">
+            <h2>Lista de Itens</h2>
+            <div class="tabela-itens">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Foto</th>
+                            <th>Nome</th>
+                            <th>Espécie</th>
+                            <th>Porte</th>
+                            <th>TempoUso</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista-itens">
+                    </tbody>
+                </table>
+            </div>
+        </div> <a href="index.html" class="btn-navigate">
+            Tela de Itens
+        </a>
+    </div>
+    <script src="cadastro.js" defer></script>
+</body>
+
+</html>
