@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
     const API_URL = "https://dc665461-b486-4aa3-b8bf-6dd536faf3a7-00-jlif411os0dg.riker.replit.dev/itens";
-
     const formulario = document.getElementById("formulario-item");
     const itemId = document.getElementById("item-id");
     const botaoForm = document.getElementById("form-btn");

@@ -216,3 +216,33 @@
 }
 
 
+@media (max-width: 900px) {
+    .container-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+    .filtro-container{
+        width: 90%;
+    }
+    .propaganda{
+        display: none;
+    }
+    .itens-grid {
+        /* 3 colunas em tablets */
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .container-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+    .propaganda{
+        display: none;
+    }
+    .itens-grid {
+        /* 2 colunas em celulares */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

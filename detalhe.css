@@ -83,3 +83,18 @@
 .solicitar-item:hover {
     filter: brightness(0.9);
 }
+@media (max-width: 768px) {
+    .detailhe {
+        grid-template-columns: 1fr; 
+        gap: 25px;
+    }
+
+    .informacoes-item h1 {
+        text-align: center; 
+        font-size: 2rem;
+    }
+
+    .detalhe-img img {
+        max-height: 400px; 
+    }
+}
